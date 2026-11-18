@@ -45,3 +45,9 @@ Before committing changes run `uv run pre-commit run --all-files` or `uv run pre
 ### Run 
 
 `uv run bulwark`
+
+#### Documentation
+
+Run `zensical serve` to start up a localhost server to view the docs for bulwark
+
+Run `zensical build` to generate the static files to deploy to a webserver
