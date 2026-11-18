@@ -20,5 +20,8 @@ build-backend = "uv_build"
 dev = [
     "mkdocstrings-python>=2.0.9",
     "nbconvert>=7.17.2",
+    "pytest>=9.2.0",
+    "ruff>=0.17.5",
+    "ty>=0.0.105",
     "zensical>=0.0.67",
 ]
