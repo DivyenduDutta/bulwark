@@ -1,7 +1,7 @@
 [project]
 name = "bulwark"
 version = "0.1.0"
-description = "Add your description here"
+description = "Wrapper and some rewrite of RobStatTM R package. Inspired from GSoC 2026 proposal"
 readme = "README.md"
 authors = [
     { name = "Divyendu Dutta", email = "connect2divyendu@gmail.com" }
@@ -15,3 +15,10 @@ bulwark = "bulwark:main"
 [build-system]
 requires = ["uv_build>=0.12.9,<0.13.0"]
 build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "mkdocstrings-python>=2.0.9",
+    "nbconvert>=7.17.2",
+    "zensical>=0.0.67",
+]
