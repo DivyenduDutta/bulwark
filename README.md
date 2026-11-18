@@ -4,7 +4,7 @@
   <p><em>Wrapper and some rewrite of RobStatTM R package. Inspired from GSoC 2026 proposal.</em></p>
 
   <p>
-    <a href="https://github.com/DivyenduDutta/bulwark/blob/master/LICENSE"><img src="https://img.shields.io/github/license/DivyenduDutta/bulwark?style=flat-square" alt="License"></a>
+    <a href="https://github.com/DivyenduDutta/bulwark/blob/master/LICENSE"><img src="https://img.shields.io/github/license/DivyenduDutta/bulwark" alt="License"></a>
   </p>
 
 ![CI](https://github.com/DivyenduDutta/bulwark/actions/workflows/ci.yaml/badge.svg)
