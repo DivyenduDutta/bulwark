@@ -13,7 +13,7 @@
     <a href="#introduction">Introduction</a> •
     <a href="#architecture">Architecture</a> •
     <a href="#setup">Setup</a> •
-    <a href="#quick-start">Quick Start</a> •
+    <a href="#quick-start">Quick Start</a>
   </p>
 </div>
 
@@ -41,7 +41,9 @@ Lorem Ipsum
 
 Before committing changes run 
 `uv run pre-commit run --all-files` 
-or 
+
+or
+
 `uv run pre-commit run --file <file1>, <file2> ...`
 
 ### Run 
