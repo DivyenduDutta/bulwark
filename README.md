@@ -14,7 +14,6 @@
     <a href="#architecture">Architecture</a> •
     <a href="#setup">Setup</a> •
     <a href="#quick-start">Quick Start</a> •
-    <a href="#demo">Demo</a>
   </p>
 </div>
 
@@ -40,14 +39,29 @@ Lorem Ipsum
 
 ### Sanity
 
-Before committing changes run `uv run pre-commit run --all-files` or `uv run pre-commit run --file <file1>, <file2> ...`
+Before committing changes run 
+`uv run pre-commit run --all-files` 
+or 
+`uv run pre-commit run --file <file1>, <file2> ...`
 
 ### Run 
 
 `uv run bulwark`
 
-#### Documentation
+### Documentation
 
 Run `zensical serve` to start up a localhost server to view the docs for bulwark
 
 Run `zensical build` to generate the static files to deploy to a webserver
+
+### Tests
+
+Run unit tests via VS Code
+
+or
+
+Run only unit tests - `pytest -m unittest`
+
+Run only tests that can be run on CI - `pytest -m runonci`
+
+Run ALL tests - `pytest`
