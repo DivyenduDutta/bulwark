@@ -24,15 +24,12 @@ repos:
       - id: ruff-check
         types_or: [ python, pyi, jupyter ]
         args: [ --fix ]
-        exclude: ^docs/
       # Run the formatter.
       - id: ruff-format
         types_or: [ python, pyi, jupyter, markdown ]
-        exclude: ^docs/
 
   - repo: https://github.com/astral-sh/ty-pre-commit
     # ty version.
     rev: v0.0.78
     hooks:
       - id: ty
-        exclude: ^docs/
