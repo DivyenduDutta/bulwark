@@ -39,14 +39,14 @@ Lorem Ipsum
 
 ### Sanity
 
-Before committing changes run 
-`uv run pre-commit run --all-files` 
+Before committing changes run
+`uv run pre-commit run --all-files`
 
 or
 
 `uv run pre-commit run --file <file1>, <file2> ...`
 
-### Run 
+### Run
 
 `uv run bulwark`
 
