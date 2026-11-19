@@ -7,13 +7,18 @@ on:
 
 jobs:
   ci-checks:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false  # let all OSes finish even if one fails
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v7.0.0
 
       - name: Set PYTHONPATH
+        shell: bash
         run: |
           echo "PYTHONPATH=$PYTHONPATH:/home/bulwark" >> $GITHUB_ENV
 
@@ -33,6 +38,7 @@ jobs:
         run: uv sync --locked --all-extras --dev
 
       - name: Run pre-commit (linting/formatting/type checking)
+        if: matrix.os == 'ubuntu-latest'  # same result on every OS, so run once
         run: uv run pre-commit run --all-files --show-diff-on-failure
 
       - name: Run tests (CI-safe only)
