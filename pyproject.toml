@@ -7,7 +7,11 @@ authors = [
     { name = "Divyendu Dutta", email = "connect2divyendu@gmail.com" }
 ]
 requires-python = ">=3.10"
-dependencies = []
+dependencies = [
+    "jupyterlab>=4.6.6",
+    "numpy>=2.2.6",
+    "rpy2>=3.6.9",
+]
 
 [project.scripts]
 bulwark = "bulwark:main"
