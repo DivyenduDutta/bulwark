@@ -6,7 +6,7 @@ readme = "README.md"
 authors = [
     { name = "Divyendu Dutta", email = "connect2divyendu@gmail.com" }
 ]
-requires-python = ">=3.10"
+requires-python = ">=3.12"
 dependencies = [
     "jupyterlab>=4.6.6",
     "numpy>=2.2.6",
